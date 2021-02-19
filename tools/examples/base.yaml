@@ -1,0 +1,11 @@
+mixed-port: 7890
+log-level: info
+external-controller: '127.0.0.1:9090'
+secret: ''
+ipv6: false
+
+# Will be ignored after profile selection
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090

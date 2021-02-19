@@ -1,0 +1,9 @@
+proxies:
+- { name: myproxy, type: socks5, server: 192.168.122.224, port: 1080}
+proxy-group:
+- name: myproxy
+  proxies:
+  - myproxy
+  type: select
+rules:
+- IP-CIDR,10.10.40.0/24,myproxy,no-resolve
